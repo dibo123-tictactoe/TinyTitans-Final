@@ -245,7 +245,7 @@ void transitionToGameState(int newState) {
   if (duringGameMusic != null) duringGameMusic.stop();
   stopAllCharacterSounds();
 
-  gameState = newState;  // ← was outside the function, now moved inside
+  gameState = newState; 
 
   if (gameState == 3 || gameState == 5) {
     if (duringGameMusic != null) duringGameMusic.loop();
